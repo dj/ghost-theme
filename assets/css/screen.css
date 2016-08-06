@@ -900,10 +900,16 @@ body.nav-opened .nav {
 
 /* When the navigation is closed and there is no cover image */
 .nav-closed .no-cover .menu-button {
+    border-color: #333;
+    color: #333;
+}
+
+@media only screen and (min-width: 900px) {
     border-color: #FFF6E5;
     background-color: #FF7F66;
     color: #FFF6E5;
 }
+
 .nav-closed .no-cover .menu-button:hover {
     border-color: #333;
     background-color: #333;
@@ -998,7 +1004,7 @@ body.nav-opened .nav {
     max-width: 710px;
     margin: 4rem auto;
     padding-bottom: 4rem;
-    border-bottom: #EBF2F6 1px solid;
+    border-bottom: #666 1px solid;
     word-wrap: break-word;
 }
 
@@ -1009,14 +1015,13 @@ body.nav-opened .nav {
     content: "";
     width: 7px;
     height: 7px;
-    border: #E7EEF2 1px solid;
+    border: #666 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;
     margin-left: -5px;
-    background: #FFF;
+    background: #FFF6E5;
     border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
 }
 
 body:not(.post-template) .post-title {
@@ -1048,7 +1053,6 @@ body:not(.post-template) .post-title {
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
-    color: #9EABB3;
 }
 
 .author-thumb {
@@ -1060,7 +1064,6 @@ body:not(.post-template) .post-title {
 }
 
 .post-meta a {
-    color: #9EABB3;
     text-decoration: none;
 }
 
@@ -1142,7 +1145,6 @@ body:not(.post-template) .post-title {
     padding: 0;
     margin: 0;
     border: none;
-    color: #2185C5;
 }
 
 /* Stop elements, such as img wider than the post content, from
@@ -1316,7 +1318,7 @@ body:not(.post-template) .post-title {
 
 .author-profile {
     padding: 0 15px 5rem 15px;
-    border-bottom: #EBF2F6 1px solid;
+    border-bottom: #666 1px solid;
     text-align: center;
 }
 
