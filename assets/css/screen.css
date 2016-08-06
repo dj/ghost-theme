@@ -749,14 +749,14 @@ body.nav-opened .nav {
 
 .nav a:link,
 .nav a:visited {
-    color: #B8B8B8;
+    color: #fff;
 }
 
 .nav li.nav-current a,
 .nav a:hover,
 .nav a:active,
 .nav a:focus {
-    color: #fff;
+    font-weight: 800;
 }
 
 .subscribe-button {
