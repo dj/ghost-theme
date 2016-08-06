@@ -900,14 +900,14 @@ body.nav-opened .nav {
 
 /* When the navigation is closed and there is no cover image */
 .nav-closed .no-cover .menu-button {
-    border-color: #333;
-    background-color: #333;
+    border-color: #FFF6E5;
+    background-color: #FF7F66;
     color: #FFF6E5;
 }
 .nav-closed .no-cover .menu-button:hover {
-    border-color: #FFF6E5;
+    border-color: #333;
+    background-color: #333;
     color: #FFF6E5;
-    background-color: #FF7F66;
 }
 
 /* When the navigation is opened */
