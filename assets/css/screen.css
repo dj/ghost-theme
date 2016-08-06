@@ -892,24 +892,20 @@ body.nav-opened .nav {
 /* When the navigation is closed */
 .nav-closed .menu-button {
     color: #fff;
-    border-color: rgba(0, 0, 0, 0.6);
+    border-color: #fff;
 }
 .nav-closed .menu-button:hover {
-    color: #222;
+    color: #fff;
+    background-color: #222;
+    border-color: #222;
 }
 
 /* When the navigation is closed and there is no cover image */
 .nav-closed .no-cover .menu-button {
-    border-color: #333;
-    color: #333;
-}
-
-@media only screen and (min-width: 900px) {
-    border-color: #FFF6E5;
+    border-color: #222;
     background-color: #FF7F66;
-    color: #FFF6E5;
+    color: #222;
 }
-
 .nav-closed .no-cover .menu-button:hover {
     border-color: #333;
     background-color: #333;
