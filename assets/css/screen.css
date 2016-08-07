@@ -559,6 +559,20 @@ button {
             transition: transform 0.5s ease;
 }
 
+/* Make the footer sticky */
+.site-wrapper:after {
+    content: "";
+    display: block;
+}
+
+.site-wrapper:after, .site-footer {
+    height: 40px;
+}
+
+.site-wrapper {
+    margin-bottom: -40px;
+}
+
 body.nav-opened .site-wrapper {
     overflow-x: hidden;
     -webkit-transform: translate3D(-240px, 0, 0);
@@ -1204,7 +1218,7 @@ body:not(.post-template) .post-title {
     position: relative;
     margin: 6rem 0 0 0;
     padding: 3rem 0 0 0;
-    border-top: #EBF2F6 1px solid;
+    border-top: #666 1px solid;
 }
 
 .post-footer h4 {
@@ -1226,11 +1240,11 @@ body:not(.post-template) .post-title {
     font-size: 1.4rem;
     line-height: 1;
     font-style: italic;
-    color: #9EABB3;
+    color: #333;
 }
 
 .author-meta a {
-    color: #9EABB3;
+    color: #333;
 }
 .author-meta a:hover {
     color: #111;
@@ -1573,12 +1587,12 @@ body:not(.post-template) .post-title {
     margin: 4rem auto;
     font-family: "Open Sans", sans-serif;
     font-size: 1.3rem;
-    color: #9EABB3;
+    color: #333;
     text-align: center;
 }
 
 .pagination a {
-    color: #9EABB3;
+    color: #333;
     transition: all 0.2s ease;
 }
 
@@ -1588,7 +1602,7 @@ body:not(.post-template) .post-title {
     position: absolute;
     display: inline-block;
     padding: 0 15px;
-    border: #bfc8cd 1px solid;
+    border: #9EABB3 1px solid;
     text-decoration: none;
     border-radius: 4px;
     transition: border 0.3s ease;
@@ -1610,27 +1624,25 @@ body:not(.post-template) .post-title {
 
 .older-posts:hover,
 .newer-posts:hover {
-    color: #889093;
-    border-color: #98a0a4;
+    color: #111;
+    border-color: #111;
 }
 
 .extra-pagination {
     display: none;
-    border-bottom: #EBF2F6 1px solid;
+    border-bottom: #666 1px solid;
 }
 .extra-pagination:after {
     display: block;
     content: "";
     width: 7px;
     height: 7px;
-    border: #E7EEF2 1px solid;
+    border: #333 1px solid;
     position: absolute;
     bottom: -5px;
     left: 50%;
     margin-left: -5px;
-    background: #FFF;
     border-radius: 100%;
-    box-shadow: #FFF 0 0 0 5px;
 }
 .extra-pagination .pagination {
     width: auto;
@@ -1710,13 +1722,16 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .site-footer {
+    box-sizing: border-box;
     position: relative;
-    margin: 8rem 0 0 0;
+    margin: 0 0 0 0;
     padding: 1rem 15px;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     line-height: 1.75em;
-    color: #BBC7CC;
+    color: #fff;
+    background-color: #111;
+    z-index: 10;
 }
 
 .site-footer a {
@@ -2083,7 +2098,7 @@ body:not(.post-template) .post-title {
     .post-footer .author {
         margin: 0 0 2rem 0;
         padding: 0 0 1.6rem 0;
-        border-bottom: #EBF2F6 1px dashed;
+        border-bottom: #333 1px dashed;
     }
 
     .post-footer .share {
